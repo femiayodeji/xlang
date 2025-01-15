@@ -6,5 +6,7 @@ export function hello(who: string = person): string {
 }
 
 console.log(hello());
+const tokens = tokenizer('print(1+5-2)');
+console.log(tokens)
 
-console.log(tokenizer('print(1+5-2)'))
+

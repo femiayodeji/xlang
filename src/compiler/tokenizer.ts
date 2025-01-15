@@ -44,7 +44,7 @@ export function tokenizer(input: string): Token[] {
                 value += character;
                 character = input[++cursorPosition]!;
             }
-            tokens.push({ type: "NumericToken", value })
+            tokens.push({ type: "NumericLiteral", value })
             continue;
         }
 
@@ -54,7 +54,7 @@ export function tokenizer(input: string): Token[] {
                 value += character;
                 character = input[++cursorPosition]!;
             }
-            tokens.push({ type: "Indentifier", value })
+            tokens.push({ type: "Identifier", value })
             continue;
         }
 
